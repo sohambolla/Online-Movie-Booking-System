@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&display=swap');
+
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #232333;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-family: 'Hanalei', cursive;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 40px;
+    margin-left: 20px;
+    color: #6feaf6;
+    text-shadow: 1px 1px 8px #6feaf6;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+select {
+    height: 30px;
+    margin-top: 14px;
+    margin-left: 5px;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #444451;
+    font-size: 15px;
+}
+
+.display {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto 10px auto;
+    perspective: 500px;
+    /* Very Nice Property */
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px -2px 15px rgba(7, 0, 7, 0.774);
+    transform: rotateX(-35deg);
+}
+
+.outer {
+    width: 58px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.middle {
+    width: 110px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.seat {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+    border: 0 solid rgba(16, 2, 53, 0.575);
+    background-color: #444451;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 10ms linear;
+}
+
+.seat:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.booked {
+    background-color: wheat;
+}
+
+.booked:hover {
+    transform: scale(1);
+}
+
+.occupied {
+    background-color: #6feaf6;
+
+}
+
+.ex {
+    transform: scale(1);
+}
+
+.in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+h4 {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.showCase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .showCase {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+    color: #6feaf6;
+    text-shadow: 0px 0px 8px #6feaf6;
+}
